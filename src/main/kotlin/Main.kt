@@ -1,22 +1,26 @@
 fun main(){
-    printname()
-    add()
-    modules()
-    println("Hello world")
+   greeting(" Joy,")
+   remainder()
+   var sum = add(3 ,4 ,1 ,3)
+    println(sum)
+   unique()
 }
-fun modules(){
-    var x = 55
-    var y = 10
-     x = x % y
-    println(x)
+fun greeting(name: String){
+    println("Hello"+" "+ name)
 }
-fun add(){
-    var x = 40
-    var y = 30
-    x = x+y
-    println(x)
-}
+fun remainder(){
+    var a=55
+    var b=2
+    var result = a%b
+    println(result)
 
-fun printname(){
-    println( "I love eating fries")
+}
+fun  add(num1 : Int,num2: Int,num3: Int,num4: Int): Int{
+    var sum=num1+num2 +num3+ num4
+    return (sum)
+
+
+}
+fun unique(){
+    println("I love eating when am stressed")
 }
